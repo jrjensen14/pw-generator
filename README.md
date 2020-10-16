@@ -1,5 +1,4 @@
-# Title 
-## pw-generator
+# pw-generator
 
 ## Purpose 
 
@@ -11,3 +10,7 @@
 * lowercase, uppercase, numeric, and/or special charecters
 * 1 charedter selected
 
+## Made with:
+
+* HTML
+* JavaScript
