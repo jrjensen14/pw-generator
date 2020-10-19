@@ -39,37 +39,31 @@ function generatePassword () {
   // characters return "true" or yes
   pwOptions = []
 
-  if (confirmUppercase === ture) {
-    pwOptions = pwOptions.concat(uppercaseChar)
+  if (confirmUppercase == ture) {
+    pwOptions = pwOptions + uppercaseChar
   }
   
-  if (confirmLowercase === true) {
-    pwOptions = pwOptions.concat(lowercaseChar)
+  if (confirmLowercase == true) {
+    pwOptions = pwOptions + lowercaseChar
   }
 
-  if (confirmNumber === true) {
-    pwOptions = pwOptions.concat(numberChar)
+  if (confirmNumber == true) {
+    pwOptions = pwOptions + numberChar
   }
   
-  if (confrimSpecial === true) {
-    pwOptions = pwOptions.concat(specialChar)
+  if (confrimSpecial == true) {
+    pwOptions = pwOptions + specialChar
   }
     console.log(pwOptions);
 
   var pwRandom = ""
 
   for (var i = 0; i < charLength; i++) {
-    pwRandom = pwRandom + pwOptions(Math.floor(Math.random() * pwOptions.length));
-    console.log(pwRandom)
+    pwRandom = pwRandom + pwOptions(Math.floor(Math.random() * pwOptions.length))
+    console.log(pwRandom);
   }
   return pwRandom;
 }
-
-
-
-
-
-
 
 // Get references to the #generate element
 var generateBtn = document.querySelector("#generate");
