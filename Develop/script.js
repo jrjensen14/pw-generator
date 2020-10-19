@@ -34,13 +34,36 @@ function generatePassword () {
   while (confirmUppercase == false && confirmLowercase == false && confirmNumber == false && confrimSpecial == false) {
     window.alert("Please pick at least at least ONE character type.")
     return confirmUppercase; }
-  };
+  
 
+  // characters return "true" or yes
+  pwOptions = []
 
-//}
+  if (confirmUppercase === ture) {
+    pwOptions = pwOptions.concat(uppercaseChar)
+  }
+  
+  if (confirmLowercase === true) {
+    pwOptions = pwOptions.concat(lowercaseChar)
+  }
 
+  if (confirmNumber === true) {
+    pwOptions = pwOptions.concat(numberChar)
+  }
+  
+  if (confrimSpecial === true) {
+    pwOptions = pwOptions.concat(specialChar)
+  }
+    console.log(pwOptions);
 
+  var pwRandom = ""
 
+  for (var i = 0; i < charLength; i++) {
+    pwRandom = pwRandom + pwOptions(Math.floor(Math.random() * pwOptions.length));
+    console.log(pwRandom)
+  }
+  return pwRandom;
+}
 
 
 
