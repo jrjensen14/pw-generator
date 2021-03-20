@@ -1,5 +1,4 @@
 # Password Generator Starter Code
-# pw-generator
 
 ## Purpose 
 
